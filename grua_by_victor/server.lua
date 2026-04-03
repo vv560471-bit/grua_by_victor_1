@@ -35,7 +35,7 @@ end)
 -- 🔄 SISTEMA DE ACTUALIZACIONES (FIXED)
 -- ============================================
 CreateThread(function()
-    Wait(2000) -- 🔥 IMPORTANTE: espera a que cargue todo
+    Wait(2000)
 
     if updateCheckDone then return end
     updateCheckDone = true
@@ -56,7 +56,6 @@ CreateThread(function()
 
     print('^3[GRUA] Buscando actualizaciones...^0')
 
-    -- ⚠️ PON TU LINK REAL AQUÍ
     local versionUrl = "https://raw.githubusercontent.com/vv560471-bit/grua_by_victor/version.txt"
 
     PerformHttpRequest(versionUrl, function(statusCode, result)
